@@ -1,0 +1,149 @@
+<html>
+<head>
+    <title>Página - Módulo I - Primeiros Passos com HTML</title>
+</head>
+<body>
+    <h1 id="inicio">Módulo 1 - Primeiros Passos com <abbr title="HyperText Markup Language">HTML</abbr></h1>
+    <hr/>
+
+    <h2 id="indice">Índice</h2>
+      <ol>
+         <li><a href="#estrutura-html">Estrutura Básica do HTML</a></li>
+         <li><a href="#atributos-tags">Atributos das Tags</a></li>
+         <li><a href="#textos">Textos no HTML</a></li>
+         <li><a href="#listas">O que são listas ordenadas e não ordenadas?</a></li>
+         <li><a href="#links">Aprendendo um pouco mais sobre links</a></li>
+         <li><a href="#referencias">Referências</a></li>
+      </ol>
+
+    <h2 id="estrutura-html">Estrutura Básica do HTML</h2>
+      <p>
+         Um documento HTML recebe algumas tags que formam a sua estrutura básica. No HTML5, o documento padrão recebe a seguinte estrutura:
+      </p>
+      <pre>
+         &lt;!DOCTYPE html&gt;
+         &lt;html&gt;
+         &lt;head&gt;
+            &lt;title&gt;Título da página&lt;/title&gt;
+            &lt;meta charset="utf-8"/&gt;
+         &lt;/head&gt;
+         &lt;body&gt;
+         
+         &lt;/body&gt;
+         &lt;/html&gt;
+      </pre>
+      <p>
+         <ul> 
+            <li><strong>&lt;!DOCTYPE html&gt; </strong>– A tag !DOCTYPE informa ao navegador a versão do HTML que está sendo utilizada no documento. Por exemplo: no HTML5, basta incluir !DOCTYPE html</li> 
+            <li><strong>&lt;html&gt;&lt;/html&gt;</strong> – Esta tag é o elemento básico da estrutura do HTML. Ela conterá todos os elementos da sua página. Todo documento HTML deve iniciar e finalizar com essa tag;</li> 
+            <li><strong>&lt;head&gt;&lt;/head&gt;&nbsp;</strong>– Essa tag delimita o cabeçalho do documento. Não possui nenhum valor visível, porém é capaz de transmitir ao navegador diversas informações muito úteis e essenciais a uma boa apresentação do seu documento HTML;</li> 
+            <li><strong>&lt;title&gt;&lt;/title&gt;&nbsp;</strong>– Essa tag define o título da sua página, o nome que aparecerá na sua aba, janela ou guia.</li> 
+            <li><strong>&lt;meta/&gt; </strong>– Essa tag permite inserir metadados ao seu documento, no caso acima, a informação&nbsp;<strong>charset=”UTF-8″</strong>, que garante a compatibilidade do código com os caracteres de padrão latino americano;</li> 
+            <li><strong>&lt;body&gt;&lt;/body&gt;&nbsp;</strong>– Finalmente, a tag que representa o corpo do documento. Em síntese, é nessa tag que todos os elementos visíveis do seu site devem ser inseridos.</li> 
+         </ul>
+      </p>
+      <small>
+         <a href="#indice">(Voltar ao índice)</a>
+      </small>
+
+    <h2 id="atributos-tags">Atributos das Tags</h2>
+      <p>
+         Os atributos são usados para personalizar as tags, modificando sua estrutura ou funcionalidade. Igualmente, os atributos são utilizados para atribuir uma classe ou id a um elemento.<br/>
+         A maioria das tags tem seus próprios atributos. Contudo, existem alguns atributos genéricos que podem ser utilizados na maioria das tags HTML.
+      </p>
+      <p>
+         <ul>
+            <li><strong>class=”…“ </strong>– Atribui uma classe ao elemento (uma classe pode ser utilizada para um ou mais elementos);</li>
+            <li><strong>id=”…“ </strong>– Atribui um id ao elemento (um id deve ser único, ou seja atribuído a um único elemento);</li>
+            <li><strong>style=”…” </strong>– Permite incluir elementos CSS (estilos) dentro da tag;</li>
+            <li><strong>lang=”…” </strong>– Define o idioma principal do elemento;</li>
+            <li><strong>title=”…” </strong>– Define o título do elemento;</li>
+            <li><strong>alt=”…” </strong>– Define um texto alternativo e, por isso, é muito utilizado em imagens, auxilia nas práticas de SEO;</li>
+            <li><strong>hidden </strong>– Oculta o elemento;</li>
+            <li><strong>align=”…” </strong>– Permite definir o padrão de alinhamento desse elemento, como por exemplo: right, center, left e justify;</li>
+            <li><strong>width=”…” </strong>– Define uma largura para o elemento;</li>
+            <li><strong>height=”…” </strong>– Define uma altura para o elemento.</li>
+         </ul>
+      </p>
+      <small>
+         <a href="#indice">(Voltar ao índice)</a>
+      </small>
+
+    <h2 id="textos">Textos no HTML</h2>
+      <p>
+         As tags de texto definem textos, estilos de fonte, parágrafos, spans, quebras de linhas, etc.
+      </p>
+      <p>
+         <ul> 
+            <li><strong>&lt;p&gt;&lt;/p&gt;&nbsp;</strong> – Principal tag de texto, compõe um parágrafo;</li> 
+            <li><strong>&lt;span&gt;&lt;/span&gt;</strong> – Apesar de ter uma funcionalidade e características parecidas com os parágrafos, costumam ser utilizadas apenas para pequenas informações, como legendas de um formulário, legendas de uma imagem, etc. Também pode ser utilizada para formar um container;</li> 
+            <li><strong>&lt;pre&gt;&lt;/pre&gt;&nbsp;</strong> – Tag utilizada para representar texto pré-formatado. Muito utilizada para inserir códigos;</li> 
+            <li><strong>&lt;b&gt;&lt;/b&gt;</strong> – Transforma o conteúdo em <b>negrito</b>;</li> 
+            <li><strong>&lt;i&gt;&lt;/i&gt;</strong> – Transforma o conteúdo em <i>itálico</i>;</li>
+            <li><strong>&lt;u&gt;&lt;/u&gt;</strong> – Transforma o conteúdo em <u>sublinhado</u>;</li>
+            <li><strong>&lt;sup&gt;&lt;/sup&gt;</strong> – Transforma o conteúdo em <sup>sobretexto</sup></li>   
+            <li><strong>&lt;mark&gt;&lt;/mark&gt;</strong> – <mark>Marcador de texto</mark></li>  
+            <li><strong>&lt;br/&gt;&nbsp;</strong> – Essa tag não necessita de fechamento, ela executa a função de quebra de linha.</li> 
+            <li><strong>&lt;hr/&gt;</strong> – Essa tag não necessita de fechamento, ela forma uma linha horizontal.</li> 
+         </ul>
+      </p>
+      <small>
+         <a href="#indice">(Voltar ao índice)</a>
+      </small>
+
+    <h2 id="listas">O que são listas ordenadas e não ordenadas?</h2>
+      <p>
+         Para poder criar uma lista, podemos utilizar uma lista ordenada, a partir das tags &lt;ol&gt;&lt;/ol&gt;, ou uma lista não ordenada, a partir das tags &lt;ul&gt;&lt;/ul&gt;.<br/> 
+         Posteriormente, incluímos dentro da lista os elementos da mesma, dentro das tags &lt;li&gt;&lt;/li&gt;. Exemplo:
+      </p>
+      <p>
+         <pre>
+         &lt;p&gt;Minha lista ordenada:&lt;/p&gt;
+            &lt;ol&gt;
+               &lt;li&gt;item 1&lt;/li&gt;
+               &lt;li&gt;item 2&lt;/li&gt;
+               &lt;li&gt;item 3&lt;/li&gt;
+            &lt;/ol&gt;
+         </pre>
+      </p>
+      <p>
+         <pre>
+         &lt;p&gt;Minha lista não ordenada:&lt;/p&gt;
+            &lt;ul&gt;
+               &lt;li&gt;item 1&lt;/li&gt;
+               &lt;li&gt;item 2&lt;/li&gt;
+               &lt;li&gt;item 3&lt;/li&gt;
+            &lt;/ul&gt;
+         </pre>
+      </p>
+      <small>
+         <a href="#indice">(Voltar ao índice)</a>
+      </small>
+
+    <h2 id="links">Aprendendo um pouco mais sobre links</h2>
+      <p>
+         A tag de link HTML é responsável que faz a ligação entre um documento e outro, sendo ele da mesma página ou de uma página de outro domínio. Esse elemento garantiu que o HTML se destacasse, e moldou a internet da forma que ela é hoje! Portanto, é o principal fundamento que forma a web.
+      </p>
+      <p>
+         Para realizar um link, podemos chamar as tags <a></a> com o atributo href. Por exemplo, caso você queira criar um link no seu texto que redirecione à página inicial do google:
+      </p>
+      <pre>
+         &lt;p&gt;Para acessar o Google, &lt;a href="https://www.google.com"&gt;clique aqui.&lt;/a&gt;&lt;/p&gt;
+      </pre>
+      <small>
+         <a href="#indice">(Voltar ao índice)</a>
+      </small>
+
+    <h2 id="referencias">Referências</h2>
+      <p>
+         <ul>
+            <li><a href="https://www.homehost.com.br/blog/tutoriais/tags-html/#:~:text=As%20tags%20HTML%20s%C3%A3o%20divididas,como%20estrutura%20." target=”blank”>Principais Tags em HTML</a></li>
+            <li><a href="https://www.w3schools.com/html/" target=”blank” >Site da W3 Schools sobre HTML</a></li>
+            <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Reference" target=”blank”>Referências HTML - Oficial Mozilla</a></li>
+         </ul>
+      </p>
+      <small>
+         <a href="#inicio">(Voltar ao inicio da página)</a>
+      </small>
+</body>
+</html>
